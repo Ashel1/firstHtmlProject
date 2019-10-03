@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tesla</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: #f2f2f2">
+<!-- Image and text -->
+    <nav class="navbar sticky-top navbar-dark" style="background-color: black;"> 
+        <a class="navbar-brand" href="#">
+        <img src="logo4.jpg" width="150" height="25" class="d-inline-block align-top" alt="">
+        <a class="navbar-brand" href="home.html">Home</a>
+        <a class="navbar-brand" href="gallery.html">Gallery</a>
+        <a class="navbar-brand" href="products.html">Products</a>
+        <a class="navbar-brand" href="enquiry.html">Enquiry</a>
+        <a class="navbar-brand" href="us.html">About Us</a>
+        </a>
+    </nav>
+    <br><br>
+    <pre style="font-size: x-large; margin: 0"><b>    Subit a question or comment</b></pre>
+    <pre style="margin-bottom: 30px">       Many common questions are answered on our <a style="color: #c00" href="https://www.tesla.com/blog">Blog</a> and <a style="color: #c00" href="https://www.tesla.com/support">Support</a> pages.</pre>
+
+    <pre style="color: gray; margin-bottom: 0">       <b>First Name</b>                   <b>Last Name</b>                    <b>Topic</b></pre>
+    <pre>       <input id="fn" type="text">       <input id="ln" type="text">       <select id="top" name="Topic"><option value=""></option><option value="a">Ordering a Tesla Vehicle</option><option value="b">Ordering a Tesla Powerwall</option><option value="c">Energy Product Support</option><option value="d">Other</option></select></pre>
+    <pre style="color: gray; margin-bottom: 0">       <b>Phone</b>                        <b>Email</b>                        <b>Country Of Residence</b></pre> 
+    <pre>       <input id="pno" type="tel">        <input id="mail" type="email">      <select id="con" name="Country"><option value=""></option><option value="US">US</option><option value="NonUS">Non US   </option></select></pre>
+    <pre style="color: gray; margin-bottom: 0">       <b>Question/Comment in Brief</b></pre>
+    <pre>       <input id="brief" type="text" style="height: 100px;width: 300px;"></pre>
+    <pre style="font-size: x-small">          By clicking "Submit" I agree to be contacted at the number provided with more information 
+          or offers about Tesla products. I understand these calls or texts may use computer
+          -assisted dialing or pre-recorded messages. This consent is not a condition of purchase.</pre><br>
+    <pre>                                                             <button onclick="table()" class="btn btn-danger">Submit</button></pre>
+    <br><br>
+
+
+    <table border="1" class="table">    
+        <thead class="thead-light">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>PhoneNo</th>
+            <th>Mail</th>
+        </tr>
+        <tr>
+           <td><p id="t1"></p></td> 
+           <td><p id="t2"></p></td> 
+           <td><p id="t3"></p></td> 
+           <td><p id="t4"></p></td> 
+        </tr>
+    </thead>
+    </table>
+
+
+
+
+    <footer style="text-align: right; color: black">Tesla © 2019</footer>
+</body>
+<script src="Script.JS"></script>
+</html>
+
